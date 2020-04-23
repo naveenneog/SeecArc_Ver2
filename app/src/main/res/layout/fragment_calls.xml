@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    tools:context="droidmentor.tabwithviewpager.Fragment.CallsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/knob1"
+        android:textSize="30sp"
+        android:id="@+id/textView" />-->
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/seekArc1"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="30dp"
+        seekarc:rotation="180"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:progressWidth="5dp"
+        seekarc:touchInside="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Turn Off"
+        android:textOn="Turn On"
+        android:id="@+id/toggleButton1"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_below="@+id/seekArc1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+</RelativeLayout>

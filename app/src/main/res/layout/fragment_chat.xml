@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:seekarc="http://schemas.android.com/apk/res-auto"
+    tools:context="droidmentor.tabwithviewpager.Fragment.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.triggertrap.seekarc.SeekArc
+        android:id="@+id/seekArc"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        seekarc:rotation="180"
+        seekarc:startAngle="30"
+        seekarc:sweepAngle="300"
+        seekarc:touchInside="true" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Turn Off"
+        android:textOn="Turn On"
+        android:id="@+id/toggleButton2"
+        android:checked="false"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
